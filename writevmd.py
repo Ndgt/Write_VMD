@@ -2,7 +2,7 @@
 from vmd import (VMD_HEADER, VMD_MOTION_COUNT, VMD_MOTION, VMD_SKIN_COUNT, VMD_SKIN,
                  VMD_CAMERA_COUNT, VMD_CAMERA, VMD_LIGHT_COUNT, VMD_LIGHT,
                  VMD_SELF_SHADOW, VMD_SELF_SHADOW_COUNT)
-
+from fbxshapefunctions import*
 from io import BufferedWriter
 from struct import pack
 import argparse
