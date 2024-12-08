@@ -1,6 +1,8 @@
 # python generated files
 __pycache__/
+*fbm/
 
 # test files
 *vmd
 *txt
+*fbx
