@@ -42,11 +42,11 @@ with open("converted.vmd", "wb") as result:
     # Header
     header = VMD_HEADER("Vocaloid Motion Data 0002", "Some model")
     writeheader(result, header)
-    
+
     # Motion Data Count
     motioncount = VMD_MOTION_COUNT(0)
     writemotioncount(result, motioncount)
-     
+
     # Skin
     if not HasBlendShape(targetmesh)[0]:
         writeskincount(result, VMD_SKIN_COUNT(0))
@@ -78,15 +78,7 @@ with open("converted.vmd", "wb") as result:
                         result,
                         VMD_SKIN(shape, frame, value/100.0)
                     )
-        '''
-        sorted_data = sorted(data, key=lambda x: x[1])
-        for item in sorted_data:
-            writeskin(
-                result,
-                VMD_SKIN(item[0], item[1], item[2])
-            )
-        '''
-    
+
     # Camera Data Count
     cameracount = VMD_CAMERA_COUNT(0)
     writecameracount(result, cameracount)
